@@ -1,0 +1,56 @@
+<!-- 
+Jordyn Guy
+Nov 22 - Nov 24
+Dynamic Voting System 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Leaderboard</title>
+</head>
+<body>
+    <style>
+        body { text-align: center; padding: 50px; font-family: Arial, sans-serif; }
+        #leaderboard { margin: 30px auto; width: 50%; text-align: left; border: 1px solid grey; border-radius: 10px; padding: 20px; }
+        #candidate { display: flex; justify-content: space-between; padding: 5px; }
+        button { padding: 10px 20px; margin: 10px; border-radius: 10px; cursor: pointer;}
+    </style>
+    
+    <h1>Voting Leaderboard</h1>
+    
+    <div id="leaderboard">
+        <div>
+            <p id="candidate">Alice: 0</p>
+            <div style="width: 100%; margin: 0 auto; background: #eee; height: 20px; border-radius: 10px;">
+            <div class="progress-bar" id="progress-alice" style="width: 0%; background: #4caf50; height: 100%; border-radius: 10px;"></div>
+            </div>
+        </div>
+
+        <div>
+            <p id="candidate">Bob: 0</p>
+            <div style="width: 100%; margin: 0 auto; background: #eee; height: 20px; border-radius: 10px;">
+            <div class="progress-bar" id="progress-bob" style="width: 0%; background: #2b16a1; height: 100%; border-radius: 10px;"></div>
+            </div>
+        </div>
+
+        <div>
+            <p id="candidate">Charlie: 0</p>
+            <div style="width: 100%; margin: 0 auto; background: #eee; height: 20px; border-radius: 10px;">
+            <div class="progress-bar" id="progress-charlie" style="width: 0%; background: #944612; height: 100%; border-radius: 10px;"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <button id="vote1">Vote for Alice</button>
+    <button id="vote2">Vote for Bob</button>
+    <button id="vote3">Vote for Charlie</button>
+    
+    <button id="reset" style="margin-top: 20px;">Reset</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
